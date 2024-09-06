@@ -1,115 +1,141 @@
 :root {
-  --orange: #FF7F50;
-  --purple: #483D8B;
-  --white: #FFFFFF;
-}
-
-body{
+    --orange: #FF7F50;
+    --purple: #483D8B;
+    --white: #FFFFFF;
+  }
+  
+  body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-}
-
-.navbar-brand{
-    flex-grow: 1;
-}
-
-.navbar{
+  }
+  
+  /* Navbar styles */
+  .navbar-container {
     background-color: var(--orange);
     padding: 1rem;
+  }
+  
+  .upper-navbar {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .upper-navbar span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #000000;
+  }
+  
+  .lower-navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.navItems{
+  }
+  
+  .navItems {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.navItems li{
+    justify-content: center;
+  }
+  
+  .navItems li {
     margin: 0 1rem;
     color: var(--white);
-}
-
-.Welcome{
+  }
+  
+  .cart-icon {
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+  
+  /* Welcome section styles */
+  .Welcome {
     background-color: var(--orange);
     color: var(--white);
     padding: 2rem;
     text-align: center;
-}
-
-.Welcome-text{
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 2rem;
-    text-align: center;
-}
-
-.Intro-text{
+  }
+  
+  .Welcome-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Intro-text {
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 2rem;
-}
-
-.ShopNow-button, .Basketballs-button{
+  }
+  
+  .ShopNow-button, .Basketballs-button {
     background-color: var(--white);
     color: var(--orange);
     border: none;
     padding: 0.5rem 1rem;
-    margin: 2rem;
+    margin: 0.5rem;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.footer{
-  background-color: #000000;
-  padding: 1rem;
-  text-align: center;
-}
-
-.footer-text {
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #000000;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .footer-text {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
+      align-items: flex-start;
     }
   
     .navItems {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      margin-bottom: 1rem;
     }
+  
     .navItems li {
-        margin: 0.5rem 0;
-      }
-    
-      .Welcome-text {
-        font-size: 1.5rem;
-      }
-    
-      .Intro-text {
-        font-size: 0.9rem;
-      }
+      margin: 0.5rem 0;
     }
-    
-    @media (max-width: 480px) {
-      .Welcome-text {
-        font-size: 1.2rem;
-      }
-    
-      .Intro-text {
-        font-size: 0.8rem;
-      }
-    
-      .ShopNow-button, .Basketballs-button {
-        display: block;
-        width: 80%;
-        margin: 0.5rem auto;
-      }
-}
+  
+    .cart-icon {
+      align-self: flex-end;
+    }
+  
+    .Welcome-text {
+      font-size: 1.5rem;
+    }
+  
+    .Intro-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Welcome-text {
+      font-size: 1.2rem;
+    }
+  
+    .Intro-text {
+      font-size: 0.8rem;
+    }
+  
+    .ShopNow-button, .Basketballs-button {
+      display: block;
+      width: 80%;
+      margin: 0.5rem auto;
+    }
+  }
