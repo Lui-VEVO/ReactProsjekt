@@ -1,0 +1,27 @@
+.Welcome {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+.Welcome-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Intro-text {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.ShopNow-button, .Basketballs-button {
+    background-color: var(--white);
+    color: var(--orange);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}

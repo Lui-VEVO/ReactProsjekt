@@ -2,140 +2,29 @@
     --orange: #FF7F50;
     --purple: #483D8B;
     --white: #FFFFFF;
-  }
-  
-  body {
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-  }
-  
-  /* Navbar styles */
-  .navbar-container {
-    background-color: var(--orange);
-    padding: 1rem;
-  }
-  
-  .upper-navbar {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .upper-navbar span {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--white);
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-color: #000000;
-  }
-  
-  .lower-navbar {
+}
+
+.App {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navItems {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-  }
-  
-  .navItems li {
-    margin: 0 1rem;
-    color: var(--white);
-  }
-  
-  .cart-icon {
-    color: var(--white);
-    font-size: 1.5rem;
-  }
-  
-  /* Welcome section styles */
-  .Welcome {
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .Welcome-text {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .Intro-text {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-  }
-  
-  .ShopNow-button, .Basketballs-button {
-    background-color: var(--white);
-    color: var(--orange);
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  /* Footer styles */
-  .footer {
-    background-color: #000000;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .footer-text {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9rem;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navItems {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-    }
-  
-    .navItems li {
-      margin: 0.5rem 0;
-    }
-  
-    .cart-icon {
-      align-self: flex-end;
-    }
-  
-    .Welcome-text {
-      font-size: 1.5rem;
-    }
-  
-    .Intro-text {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .Welcome-text {
-      font-size: 1.2rem;
-    }
-  
-    .Intro-text {
-      font-size: 0.8rem;
-    }
-  
-    .ShopNow-button, .Basketballs-button {
-      display: block;
-      width: 80%;
-      margin: 0.5rem auto;
-    }
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    /* Add any global responsive styles here */
+}
+
+@media (max-width: 480px) {
+    /* Add any global responsive styles here */
 }

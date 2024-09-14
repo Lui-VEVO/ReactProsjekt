@@ -1,4 +1,5 @@
 import React from "react";
+import "../Components/Welcome.css";
 
 export default function Welcome() {
   return (
